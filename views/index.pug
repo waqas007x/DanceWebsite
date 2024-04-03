@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    title Wibe-Dance-Academy
+    style
+      include ../static/style.css  
+
+body
+  nav#navbar
+      ul
+        div#logo
+          img(src='/static/logo.png')
+          div.logo HDA
+        li
+          a(href='/') Home
+        li
+          a(href='/') About us
+        li
+          a(href='/') Services
+        li
+          a(href='/') Class info
+        li
+          a(href='/') Contact us
+    section#introsection
+      div Welcome to Wibe-Dance-Academy
+      div.small Eat Sleep Dance Repeat
+    section#missionsection
+      h2 Our mission
+      .card
+        h3 Dance Perfection
+        .cardbox
+          .cardimg
+            img(src='/static/pg1.png')
+          .cardcontent
+            p this is the dance
+      .card
+        h3 Dance The way you like
+        .cardbox
+          .cardimg
+            img(src='/static/pg2.png')
+          .cardcontent
+            p this is the dance
+      .card
+        h3 Expert teacher
+        .cardbox
+          .cardimg
+            img(src='/static/pg3.png')
+          .cardcontent
+            p this is the dance
+    section#sponsersection
+      h2 Our Sponsers
+      div#sponser 
+        img(src="/static/apple.png", alt="sponserimg" Class="sponderimg")
+        img(src="/static/hp.png", alt="sponserimg" Class="sponderimg")
+        img(src="/static/sky.png", alt="sponserimg" Class="sponderimg")
+        img(src="/static/mic.png", alt="sponserimg" Class="sponderimg")
+    footer#footer
+      |  Copyright &copy; 2024 WibeDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js 

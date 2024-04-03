@@ -1,0 +1,40 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+block content
+    section#introsection
+      div Welcome to Wibe-Dance-Academy
+      div.small Eat Sleep Dance Repeat
+    section#missionsection
+      h2 Our mission
+      .card
+        h3 Dance Perfection
+        .cardbox
+          .cardimg
+            img(src='/static/pg1.png')
+          .cardcontent
+            p this is the dance
+      .card
+        h3 Dance The way you like
+        .cardbox
+          .cardimg
+            img(src='/static/pg2.png')
+          .cardcontent
+            p this is the dance
+      .card
+        h3 Expert teacher
+        .cardbox
+          .cardimg
+            img(src='/static/pg3.png')
+          .cardcontent
+            p this is the dance
+    section#sponsersection
+      h2 Our Sponsers
+      div#sponser 
+        img(src="/static/apple.png", alt="sponserimg" Class="sponderimg")
+        img(src="/static/hp.png", alt="sponserimg" Class="sponderimg")
+        img(src="/static/sky.png", alt="sponserimg" Class="sponderimg")
+        img(src="/static/mic.png", alt="sponserimg" Class="sponderimg")
